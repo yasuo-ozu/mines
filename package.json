@@ -1,0 +1,30 @@
+{
+  "name": "mines",
+  "version": "1.0.0",
+  "description": "hard minesweeper",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasuo-ozu/mines.git"
+  },
+  "keywords": [
+    "minesweeper"
+  ],
+  "author": "yasuo-ozu",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/yasuo-ozu/mines/issues"
+  },
+  "homepage": "https://github.com/yasuo-ozu/mines#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-less": "^3.3.2",
+    "gulp-typescript": "^3.2.3",
+    "gulp-uglify": "^3.0.0",
+    "typescript": "^2.6.1"
+  }
+}

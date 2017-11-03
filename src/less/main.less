@@ -1,0 +1,73 @@
+
+@base-color: #999;
+
+html, body { margin: 0; padding: 0; }
+#base {
+	ul {
+		margin: 0;
+		padding: 0;
+		// overflow: hidden;
+		clear: both;
+
+		li {
+			list-style: none;
+			width: 1em; height: 1em;
+			text-align: center;
+			display: block;
+			float: left;
+			margin: 0 0.5em 0.5em 0;
+			padding: 0.5em;
+			border: 1px @base-color solid;
+			transition: all 200ms 0s ease;
+			cursor: pointer;
+			font-weight: bold;
+			position: relative;
+			color: @base-color;
+			&.open,&.flag {
+				cursor: default;
+			}
+			&:not(.open):not(.flag):hover {
+				transform: scale(1.1,1.1);
+			}
+			&.flag::before {
+				border: 0.5em solid transparent;
+				border-top: 0.5em red solid;
+				border-left: 0.5em red solid;
+				width: 0; height: 0;
+				display: block;
+				position: absolute;
+				top: 0.5em;
+				left: 0.5em;
+				content: " ";
+			}
+			&.flag::after {
+				border: 0.125em solid transparent;
+				border-top: 0.125em orange solid;
+				border-left: 0.125em brown solid;
+				border-right: 0.125em brown solid;
+				border-bottom: 0.125em brown solid;
+				display: block;
+				width: 0;
+				height: 0.75em;
+				position: absolute;
+				left: 0.5em;
+				top: 0.5em;
+				content: " ";
+			}
+			&.open {
+				background: @base-color;
+			}
+			&.num1 { color: blue }
+			&.num2 { color: green }
+			&.num3 { color: red }
+			&.num4 { color: #009 }
+			&.num5 { color: brown }
+			&.num6 { color: cyan }
+			&.num7 { color: black }
+			&.num8 { color: gray }
+		}
+	}
+	padding: 0; margin: 0.5em;
+
+
+}
